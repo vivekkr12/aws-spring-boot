@@ -1,0 +1,23 @@
+target/
+.mvn
+**/target/
+**/.mvn
+
+# Intellij Idea
+.idea/
+*.iml
+*.iws
+*.ipr
+
+**/.idea/
+**/*.iml
+**/*.iws
+**/*.ipr
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans

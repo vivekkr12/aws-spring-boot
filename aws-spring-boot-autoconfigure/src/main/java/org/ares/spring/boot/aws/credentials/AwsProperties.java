@@ -1,4 +1,4 @@
-package org.ares.spring.boot.aws;
+package org.ares.spring.boot.aws.credentials;
 
 import com.amazonaws.regions.Regions;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -8,15 +8,15 @@ import javax.annotation.PostConstruct;
 @ConfigurationProperties(prefix = "aws.spring")
 public class AwsProperties {
 
-    private static final Regions DEFAULT_REGIONS = Regions.US_EAST_1;
-
     private String accessKey;
     private String secretKey;
     private Regions region;
 
     @PostConstruct
     private void initDefaults() {
-        region = region != null ? region : DEFAULT_REGIONS;
+        region = region != null ? region
+                : Regions.getCurrentRegion() != null ? Regions.fromName(Regions.getCurrentRegion().getName())
+                : Regions.DEFAULT_REGION;
     }
 
     public String getAccessKey() {

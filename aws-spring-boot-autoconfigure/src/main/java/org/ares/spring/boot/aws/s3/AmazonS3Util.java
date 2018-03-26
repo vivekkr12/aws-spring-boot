@@ -22,7 +22,7 @@ public class AmazonS3Util {
     private AmazonS3 amazonS3;
 
     @Autowired
-    AmazonS3Util(AmazonS3 amazonS3) {
+    private AmazonS3Util(AmazonS3 amazonS3) {
         this.amazonS3 = amazonS3;
     }
 
@@ -62,5 +62,4 @@ public class AmazonS3Util {
             upload.waitForCompletion();
         }
     }
-
 }

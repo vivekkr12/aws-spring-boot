@@ -1,6 +1,6 @@
 # Auto configure on startup
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-org.ares.spring.boot.aws.AwsCredentialsProviderAutoConfigure,\
+org.ares.spring.boot.aws.credentials.AwsCredentialsProviderAutoConfigure,\
 org.ares.spring.boot.aws.s3.AmazonS3AutoConfigure,\
 org.ares.spring.boot.aws.sns.AmazonSNSAutoConfigure,\
 org.ares.spring.boot.aws.sqs.AmazonSQSAutoConfigure,\

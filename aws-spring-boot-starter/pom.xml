@@ -16,7 +16,7 @@
     </parent>
 
     <properties>
-        <aws-sdk.version>1.11.301</aws-sdk.version>
+        <aws-sdk.version>1.12.261</aws-sdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
